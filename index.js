@@ -2,8 +2,7 @@
 const employee = {name: 'Sam', streetAddress: 'MainStreet'};
 
 function updateEmployeeWithKeyAndValue(employee, key, value){
-    const newEmployee = {...employee};
-    newEmployee[key] = value;
+    const newEmployee = {...employee , [key]: value};
     return newEmployee;
 }
 
